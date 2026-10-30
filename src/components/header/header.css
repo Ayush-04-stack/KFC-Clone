@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: white;
+  }
+  
+  .headerLocation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 0;
+    height: 40px;
+    margin-right: 1.2%;
+  }
+  .locationData{
+    font-size: medium;
+  }
+  
+  .locationButton {
+    height: 32px;
+    width: 99px;
+    margin-left: 23px;
+    color: white;
+    background-color: black;
+    border-radius: 10rem;
+    font-size: small;
+  }
+  
+  .color {
+    color: #e4002b;
+  }
+  
+  .headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    height:60px;
+  }
+  
+  .navitems-left {
+    display: flex;
+  }
+  
+  .navitems-right {
+    display: flex;
+  }
+  
+  .auth-links ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .auth-links ul li {
+    margin: 0 8px;
+  }
+  
+  .auth-links ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+  }
+  .order{
+    display: flex;
+  }
+  .order img{
+    width: 50px;
+  }
+  
+  .headerBottom {
+    background-color: #202124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 68px;
+  }
+  
+  .headBottomTxt {
+    font-weight: bold;
+    margin: 0 0 0 20px;
+  }
+  
+  .hBottomButton {
+    background-color: #e4002b;
+    height: 44px;
+    width: 165px;
+    border-radius: 1.4rem;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+  }
+  @media only screen and (min-width: 1200px) {
+    .headerLocation {
+      padding: 12px 0;
+    }
+    .locationButton {
+      width: 120px;
+    }
+    .headerBottom {
+      height: 80px;
+    }
+    .hBottomButton {
+      width: 200px;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .headerLocation {
+      padding: 10px 0;
+    }
+    .locationData{
+      font-size: small;
+    }
+    .locationButton {
+      width: 100px;
+      font-size: x-small;
+    }
+    .headerBottom {
+      height: 60px;
+    }
+    .hBottomButton {
+      width: 200px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .headerLocation {
+      padding: 8px 0;
+    }
+    .locationData{
+      font-size:x-small;
+    }
+    .locationButton {
+      width: 100px;
+      font-size: xx-small;
+    }
+    .headerBottom {
+      height: 80px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hBottomButton {
+      width: 100px;
+      font-size: small;
+      margin-left: 0;
+    }
+    .headBottomTxt {
+      margin-top: 10px;
+      font-size: medium;
+    }
+  }
+  @media only screen and (max-width: 460px){
+    .headerLocation {
+      height: 65px;
+    }
+    .locationButton{
+      height:40px;
+      font-size: xx-small;
+    }
+    .locationData{
+      font-size:xx-small;
+    }
+    .headerWrapper{
+      font-size:x-small;
+      height: 80px;
+      flex-wrap: wrap;
+      justify-content:none;
+      width: fit-content;
+    }
+    .logo ,
+    .order_logo{
+      width:40px;
+      height: 40px;
+    }
+    .auth-links ul li {
+      margin:0 4px 0 0;
+    }
+    .headerBottom {
+      height: 100px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hBottomButton {
+      width: 100px;
+      font-size: x-small;
+      margin-left: 0;
+      margin-bottom: 10px;
+      height: 40px;
+    }
+    .headBottomTxt {
+      margin-top: 10px;
+      font-size:small;
+    }
+  }
